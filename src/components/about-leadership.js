@@ -11,46 +11,49 @@ import {
   Kicker,
   Space,
 } from "./ui"
+import { Divide } from "react-feather"
 
 function AboutProfile(props) {
   return (
-    <Box width="third" padding={4} center>
-      {props.image && (
-        <GatsbyImage alt={props.image.alt} image={getImage(props.image)} />
-      )}
-      <Space size={3} />
-      <Box>
-        {props.name && (
-          <Text variant="medium" bold center>
-            {props.name}
-          </Text>
-        )}
-        {props.jobTitle && (
-          <Text variant="medium" center>
-            {props.jobTitle}
-          </Text>
-        )}
-      </Box>
-    </Box>
+    <div></div>
+    // <Box width="third" padding={4} center>
+    //   {props.image && (
+    //     <GatsbyImage alt={props.image.alt} image={getImage(props.image)} />
+    //   )}
+    //   <Space size={3} />
+    //   <Box>
+    //     {props.name && (
+    //       <Text variant="medium" bold center>
+    //         {props.name}
+    //       </Text>
+    //     )}
+    //     {props.jobTitle && (
+    //       <Text variant="medium" center>
+    //         {props.jobTitle}
+    //       </Text>
+    //     )}
+    //   </Box>
+    // </Box>
   )
 }
 
 export default function AboutLeadership(props) {
   return (
-    <Section>
-      <Container width="tight">
-        <Box center paddingY={4}>
-          {props.kicker && <Kicker>{props.kicker}</Kicker>}
-          {props.heading && <Heading as="h1">{props.heading}</Heading>}
-          {props.subhead && <Text>{props.subhead}</Text>}
-        </Box>
-        <FlexList gutter={false} gap={0} variant="center" alignItems="start">
-          {props.content.map((profile) => (
-            <AboutProfile key={profile.id} {...profile} />
-          ))}
-        </FlexList>
-      </Container>
-    </Section>
+    <div></div>
+    // <Section>
+    //   <Container width="tight">
+    //     <Box center paddingY={4}>
+    //       {props.kicker && <Kicker>{props.kicker}</Kicker>}
+    //       {props.heading && <Heading as="h1">{props.heading}</Heading>}
+    //       {props.subhead && <Text>{props.subhead}</Text>}
+    //     </Box>
+    //     <FlexList gutter={false} gap={0} variant="center" alignItems="start">
+    //       {props.content.map((profile) => (
+    //         <AboutProfile key={profile.id} {...profile} />
+    //       ))}
+    //     </FlexList>
+    //   </Container>
+    // </Section>
   )
 }
 

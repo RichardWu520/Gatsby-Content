@@ -5,24 +5,26 @@ import * as styles from "./about-stat-list.css.ts"
 
 function AboutStat(props) {
   return (
-    <Box width="fitContent" className={styles.statContainer}>
-      {props.value && <Text variant="stat">{props.value}</Text>}
-      {props.label && <Text variant="statLabel">{props.label}</Text>}
-    </Box>
+    <div></div>
+    // <Box width="fitContent" className={styles.statContainer}>
+    //   {props.value && <Text variant="stat">{props.value}</Text>}
+    //   {props.label && <Text variant="statLabel">{props.label}</Text>}
+    // </Box>
   )
 }
 
 export default function AboutStatList(props) {
   return (
-    <Section>
-      <Container>
-        <FlexList className={styles.statList} variant="center" responsive>
-          {props.content.map((stat) => (
-            <AboutStat key={stat.id} {...stat} />
-          ))}
-        </FlexList>
-      </Container>
-    </Section>
+    <div></div>
+    // <Section>
+    //   <Container>
+    //     <FlexList className={styles.statList} variant="center" responsive>
+    //       {props.content.map((stat) => (
+    //         <AboutStat key={stat.id} {...stat} />
+    //       ))}
+    //     </FlexList>
+    //   </Container>
+    // </Section>
   )
 }
 
