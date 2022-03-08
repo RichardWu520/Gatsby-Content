@@ -5,21 +5,20 @@ import Feature from "./feature"
 
 export default function FeatureList(props) {
   return (
-    <div></div>
-    // <Container width="fullbleed">
-    //   <Box background="muted" radius="large">
-    //     <Box center paddingY={5}>
-    //       <Heading>
-    //         {props.kicker && <Kicker>{props.kicker}</Kicker>}
-    //         {props.heading}
-    //       </Heading>
-    //       {props.text && <Text>{props.text}</Text>}
-    //     </Box>
-    //     {props.content.map((feature, i) => (
-    //       <Feature key={feature.id} {...feature} flip={i % 2} />
-    //     ))}
-    //   </Box>
-    // </Container>
+    <Container width="fullbleed">
+      <Box background="muted" radius="large">
+        <Box center paddingY={5}>
+          <Heading>
+            {props.kicker && <Kicker>{props.kicker}</Kicker>}
+            {props.heading}
+          </Heading>
+          {props.text && <Text>{props.text}</Text>}
+        </Box>
+        {props.content.map((feature, i) => (
+          <Feature key={feature.id} {...feature} flip={i % 2} />
+        ))}
+      </Box>
+    </Container>
   )
 }
 
