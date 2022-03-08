@@ -6814,63 +6814,6 @@
             "id": "homepageBenefitList"
           }
         }
-      },
-      "fields": {
-        "heading": {
-          "en-US": "Get started in minutes and make it your own"
-        },
-        "text": {
-          "en-US": "Everything you need to start creating a homepage today"
-        },
-        "name": {
-          "en-US": "Benefits"
-        },
-        "content": {
-          "en-US": [
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "1u2PopHTz5ipSc3fQXX5Mc"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "4MwM1Tj0WO5GmlVt46Lvn9"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "1CnTrUmN5ebFi779fuSdY3"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "29FZ9n1BsU1581telq0BZw"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "JXP4ZSuOFRnvFXbvByFew"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "wbmlvKVS92206Yr7BIWJc"
-              }
-            }
-          ]
-        }
       }
     },
     {
