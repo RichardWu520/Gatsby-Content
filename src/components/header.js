@@ -1,6 +1,7 @@
 import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { Menu, X } from "react-feather"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import {
   Container,
   Flex,
@@ -75,10 +76,14 @@ export default function Header() {
       <Container className={desktopHeaderNavWrapper}>
         <Space size={2} />
         <Flex variant="spaceBetween">
-          <NavLink to="/">
+          {/* <NavLink to="/">
             <VisuallyHidden>Home</VisuallyHidden>
             <BrandLogo />
-          </NavLink>
+          </NavLink> */}
+          <AniLink paintDrip to={"/"} >
+            <VisuallyHidden>Home</VisuallyHidden>            
+            <BrandLogo />
+          </AniLink>
           <nav>
             <FlexList gap={4}>
               {navItems &&
@@ -90,7 +95,8 @@ export default function Header() {
                         navItems={navItem.navItems}
                       />
                     ) : (
-                      <NavLink to={navItem.href}>{navItem.text}</NavLink>
+                      // <NavLink to={navItem.href}>{navItem.text}</NavLink>
+                      <AniLink  paintDrip to={navItem.href} className="ui_navlink__ur0mb55">{navItem.text}</AniLink>
                     )}
                   </li>
                 ))}

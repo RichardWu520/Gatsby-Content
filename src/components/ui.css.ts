@@ -384,6 +384,16 @@ export const navlink = style({
     color: theme.colors.active,
   },
 })
+export const AniLink = style({
+  color: "inherit",
+  textDecoration: "none",
+  transitionProperty: "color",
+  transitionDuration: "0.2s",
+  transitionTimingFunction: "ease-in-out",
+  ":hover": {
+    color: theme.colors.active,
+  },
+})
 
 export const navButtonlink = style({
   color: "inherit",
@@ -453,6 +463,16 @@ export const buttons = styleVariants({
     },
   ],
   link: [
+    link,{
+      color: "inherit",
+      textDecoration: "none",
+      transitionProperty: "color",
+      transitionDuration: "0.2s",
+      transitionTimingFunction: "ease-in-out",
+      ":hover": {
+        color: theme.colors.active,
+      },
+    },
     button,
     {
       color: "inherit",

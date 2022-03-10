@@ -9,7 +9,7 @@ module.exports = {
     siteUrl: "https://cuddlewu.com/",
     title: "Richard Wu's Portfolio",
     author: `Richard Wu`,
-    description: "A Gatsby Starter for building homepages with Contentful",
+    description: "Yichen Wu's Blog",
   },
   plugins: [
     {
@@ -26,6 +26,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-vanilla-extract",
+    "gatsby-plugin-transition-link",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
