@@ -9,6 +9,16 @@ globalStyle("body", {
   WebkitFontSmoothing: "antialiased",
   MozOsxFontSmoothing: "grayscale",
 })
+globalStyle("a", {
+  color: "inherit",
+  textDecoration: "none",
+  transitionProperty: "color",
+  transitionDuration: "0.2s",
+  transitionTimingFunction: "ease-in-out"
+})
+globalStyle("a:hover", {
+  color: theme.colors.active,
+})
 
 globalStyle("*", {
   boxSizing: "border-box",

@@ -96,7 +96,7 @@ export default function Header() {
                       />
                     ) : (
                       // <NavLink to={navItem.href}>{navItem.text}</NavLink>
-                      <AniLink  paintDrip to={navItem.href} className="ui_navlink__ur0mb55">{navItem.text}</AniLink>
+                      <AniLink  paintDrip to={navItem.href} >{navItem.text}</AniLink>
                     )}
                   </li>
                 ))}
