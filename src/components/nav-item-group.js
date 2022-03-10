@@ -4,6 +4,7 @@ import { Box, Flex, FlexList, NavButtonLink, NavLink } from "./ui"
 import Caret from "./caret"
 import * as styles from "./nav-item-group.css"
 import { media } from "./ui.css"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export default function NavItemGroup({ name, navItems }) {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -92,7 +93,7 @@ export default function NavItemGroup({ name, navItems }) {
           >
             {navItems.map((navItem) => (
               <li key={navItem.id}>
-                <NavLink to={navItem.href} className={styles.navLinkListLink}>
+                <AniLink paintDrip to={navItem.href} className={styles.navLinkListLink}>
                   <Flex variant="start" gap={3}>
                     {navItem.icon && (
                       <GatsbyImage
@@ -112,7 +113,7 @@ export default function NavItemGroup({ name, navItems }) {
                       )}
                     </Flex>
                   </Flex>
-                </NavLink>
+                </AniLink>
               </li>
             ))}
           </FlexList>

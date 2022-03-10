@@ -153,9 +153,12 @@ export default function Header() {
                       navItems={navItem.navItems}
                     />
                   ) : (
-                    <NavLink to={navItem.href} className={mobileNavLink}>
+                    // <NavLink to={navItem.href} className={mobileNavLink}>
+                    //   {navItem.text}
+                    // </NavLink>
+                    <AniLink paintDrip to={navItem.href} className={mobileNavLink}>
                       {navItem.text}
-                    </NavLink>
+                    </AniLink>
                   )}
                 </li>
               ))}
